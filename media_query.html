@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        .cointainer {
+            display: flex;
+            margin: 0 auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .food {
+            border: 2px solid gray;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+            width: 250px;
+            background-color:rgb(116, 100, 185);
+        }
+
+        .food img {
+            width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        @media (min-width: 1000px) {
+            .food {
+                background-color:  rgb(179, 206, 179); 
+            }
+        }
+
+        @media (max-width: 700px) {
+            .cointainer {
+                flex-direction: column;
+            }
+
+            .food {
+                
+            width: 450px;
+                background-color: rgb(219, 94, 192);
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="cointainer">
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In consectetur eligendi veritatis culpa
+                reprehenderit necessitatibus animi ad itaque explicabo quod iure illum pariatur cumque voluptates sunt,
+                vitae fuga? Eos accusamus dolore aspernatur nisi voluptate, sit exercitationem. Rerum mollitia
+                doloremque nam?</p>
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <p>Similique illo sunt inventore recusandae quos error, ea atque aliquam perferendis alias molestiae, quod
+                minima doloremque quidem. Eveniet, facilis, accusantium tempore minima, possimus quaerat corrupti nihil
+                temporibus magni sed voluptatibus? Deleniti corrupti reiciendis accusantium minima reprehenderit neque
+                possimus magni consequatur.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <p>Consectetur porro fuga officia repudiandae voluptates, minima voluptate sint! Explicabo doloremque
+                tenetur placeat impedit suscipit? Unde officiis pariatur similique vel ab aliquam illum voluptates
+                numquam aut nemo quas doloribus, ipsam excepturi ea consequuntur recusandae cupiditate nobis magni
+                fugiat delectus repellendus?</p>
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <p>Nisi eos aliquam dolor. Cumque est dolores accusantium nemo inventore repellat doloribus perferendis,
+                cupiditate, odio at unde consectetur! Dignissimos nobis dolor sit itaque illo perferendis cupiditate
+                molestiae? Voluptatem cum accusamus est dolorum nisi quisquam ut ratione! Facilis deserunt provident
+                aut!</p>
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <p>Iusto, consequuntur velit. Iusto voluptas eius sequi vitae necessitatibus. Maxime, exercitationem.
+                Explicabo mollitia deserunt recusandae similique. Culpa asperiores odit magni voluptatem inventore ad
+                placeat ab aperiam sunt, cumque veritatis at doloribus, incidunt sapiente consequuntur odio aut porro
+                perferendis numquam nobis?</p>
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <p>Doloremque rem velit repudiandae quas facere corporis cum sequi nihil, at earum! Nemo eveniet dolor
+                possimus obcaecati. Nesciunt rerum repellat eos expedita inventore a veritatis maxime placeat quis vitae
+                minus, quam, blanditiis exercitationem tempora dolor modi libero alias enim non!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
